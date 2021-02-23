@@ -1,0 +1,153 @@
+/*css reset*/
+*{margin:0;padding:0;box-sizing:border-box;}
+a{text-decoration:none;color:black;}
+/*common css*/
+.layout{
+    max-width:900px;
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    background:white;
+
+}
+
+ul,ol{list-style:none;}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+body{
+    background:#EFEFEF;
+    font-size:14px/1.5 Arial;
+    color:#666666;
+}
+p,li,span{
+    font-size:14px;
+}
+section{
+    margin:20px 20px 0 20px;
+    padding-bottom:20px;
+    border-bottom:1px solid #cccccc;
+  }
+  
+h2{
+    color:#5c99ca;
+    margin-bottom:20px;
+    font-size:16px;
+}
+h3{
+    margin-bottom:20px;
+    color:black;
+    font-size:16px;
+}
+/*header区*/
+ header{
+    text-align:center;
+    color:white;
+    padding:80px 0 14px 0;
+    background:#3C3C3C;
+    
+}
+header>p{
+    color:#AAAAAA;
+}
+/*page区*/
+.layout .page{
+    display:flex;
+    flex-wrap:wrap;
+}
+/*aside区*/
+ aside{
+     width:240px;
+     border-right:1px solid #cccccc;
+     color:#666666;
+     position: relative;
+     padding-top:100px;
+ }
+ /*头像区*/
+ aside .avatar{
+    text-align:center;
+    position:absolute;
+    top:-80px;
+    width:100%;
+ }
+ aside .avatar>img{
+    width:162px;
+    height:162px;
+    border-radius:50%;
+    background:#CCCCCC;
+    border:1px solid #CCCCCC;
+}
+ /*个人信息区*/
+ aside section .personal-info>div>span{
+    width:70px;
+    display:inline-block;
+ }
+ aside section .personal-info>div>span+span::before{
+   content:':';
+   margin-right:10px;
+}
+/*专业技能区*/
+section .skills .item{
+    display:flex;
+    align-items: center;
+  }
+section .skills .item>span:first-child{
+
+    width:70px;
+    font-size:13px;
+}
+aside .skills .item>span:nth-child(2){
+ 
+    height:5px;
+    background-color:#ccc;;
+    flex:1;
+ }
+ aside .skills .item>span:nth-child(2)>i{
+    display:block;
+    height:5px;
+    background-color:black;
+ }
+/*联系区*/
+aside .contact>ul>li>svg{
+    margin-right:10px;
+}
+/*main区*/
+main{
+    flex:1;
+}
+/*关于我区*/
+main .personal-intro{
+    padding-bottom:20px;
+}
+/*教育经历区*/
+main .edu-exp{
+    padding-bottom:20px;
+}
+/*项目经历区*/
+main .projects-exp>ul{
+   list-style:disc;
+   margin-bottom:20px;
+}
+main .projects-exp>ul>li{
+    margin-left:50px;
+}
+/*footer区*/
+footer{
+    text-align:center;
+}
+@media (max-width:768px){
+    header{
+        padding:20px 0 90px 0;
+    }
+    aside{
+        width:100%;
+        padding-top:0px;
+    }
+    aside .avatar>img{
+        width:100px;
+        height:100px;
+    }
+}
